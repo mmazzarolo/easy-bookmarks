@@ -1,0 +1,19 @@
+<p>Hi!</p>
+<p>Thank you for stopping by :)</p>
+<p>This Android Application has been developed for the&nbsp;<a href="https://www.udacity.com/course/android-developer-nanodegree--nd801">Udacity Android Nanodegree</a>&nbsp;by&nbsp;<a href="https://github.com/mmazzarolo">me</a>.</p>
+<p>While working on my Nanodegree previous projects I learned a lot about new libraries and I reserved this little spot to thank their authors.</p>
+<p>So, here are all the libraries used in this project in no particular order:</p>
+<ul>
+<li><a href="https://github.com/JakeWharton/butterknife">Butterknife</a>, preventing eye bleeding since 2013</li>
+<li><a href="https://github.com/wasabeef/recyclerview-animators">Recyclerview-animators</a>, for awesome recyclerview animations</li>
+<li><a href="http://square.github.io/picasso/">Picasso</a>, the boss of ImageViews</li>
+<li><a href="https://github.com/orhanobut/logger">Logger</a>, for better and faster logs visibility</li>
+<li><a href="https://github.com/johncarl81/parceler">Parceler</a>, for doing the dirty work for me</li>
+<li><a href="https://github.com/ApmeM/android-flowlayout">FlowLayout</a>, @Google take notes, we need something like this!</li>
+<li><a href="https://github.com/splitwise/TokenAutoComplete">TokenAutoComplete</a>,&nbsp;really really really flexible: thank you</li>
+<li><a href="https://github.com/wnafee/vector-compat">Vector Compat</a>, while waiting for Google own implementation this library was a godsend for a vector lover like me</li>
+<li><a href="https://github.com/Clans/FloatingActionButton">Clans FAB</a>, for being the best custom Floating Action Button (in my opinion)</li>
+<li><a href="https://github.com/deano2390/MaterialShowcaseView">MaterialShowcaseView</a>, for a fantastic showcase of the apps&nbsp;</li>
+</ul>
+<p>I'd also like to thank&nbsp;<a href="https://www.firebase.com/">the Firebase team</a>&nbsp;for the "backend" stuff of this app.</p>
+<p>Cya!</p>

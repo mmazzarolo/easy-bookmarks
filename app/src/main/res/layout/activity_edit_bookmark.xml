@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinatorlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view1"
+        style="@style/MyCardView"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:transitionName="@string/trans_cardview"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardUseCompatPadding="true">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    style="@style/CardViewSection"
+                    android:layout_marginBottom="@dimen/default_padding_medium"
+                    android:layout_marginTop="@dimen/default_padding_medium"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageview_favicon"
+                        android:layout_width="@dimen/icon_small"
+                        android:layout_height="@dimen/icon_small"
+                        android:layout_gravity="center_vertical"
+                        android:contentDescription="@string/cd_favicon"
+                        android:src="@drawable/ic_bookmark_grey_500_24dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/default_padding_large"
+                        android:layout_marginStart="@dimen/default_padding_large"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textview_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/md_grey_900"
+                            android:textSize="@dimen/text_medium"/>
+
+                        <TextView
+                            android:id="@+id/textview_domain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:textSize="@dimen/text_small"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Detail section-->
+
+                <LinearLayout
+                    style="@style/CardViewSection"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <org.apmem.tools.layouts.FlowLayout
+                        android:id="@+id/flowlayout_tags"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_padding_medium"
+                        android:layout_marginLeft="-6dp"
+                        android:layout_marginStart="-6dp"/>
+
+                    <TextView
+                        android:id="@+id/textview_date_saved"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_padding_medium"
+                        android:textSize="@dimen/text_small"
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/cardview_full_url"
+                        android:textColor="@color/md_grey_900"
+                        android:textSize="@dimen/text_small"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/textview_full_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/default_padding_medium"
+                        android:textSize="@dimen/text_small"/>
+
+                </LinearLayout>
+
+                <LinearLayout style="@style/CardViewSeparator"/>
+
+                <!--Body section-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/default_padding_large">
+
+                    <!--Custom title-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/cd_bookmark_title"
+                            android:padding="@dimen/default_padding_medium"
+                            android:src="@drawable/ic_format_text_grey600_24dp"/>
+
+                        <!-- Dummy collectionItem to prevent AutoCompleteTextView from receiving focus -->
+                        <LinearLayout
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:layout_width="0px"
+                            android:layout_height="0px"/>
+
+                        <!-- :nextFocusUp and :nextFocusLeft have been set to the id of this component
+                             to prevent the dummy from receiving focus again -->
+
+                        <EditText
+                            android:id="@+id/edittext_title_custom"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginRight="24dp"
+                            android:hint="@string/edit_bookmark_custom_title"
+                            android:imeOptions="actionDone"
+                            android:inputType="textCapSentences"
+                            android:padding="@dimen/default_padding_medium"
+                            android:textSize="@dimen/text_medium"
+                            android:nextFocusUp="@id/edittext_title_custom"
+                            android:nextFocusLeft="@id/edittext_title_custom" />
+
+                    </LinearLayout>
+
+                    <!--Tags-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:contentDescription="@string/cd_add_tag"
+                            android:padding="@dimen/default_padding_medium"
+                            android:src="@drawable/ic_tag_multiple_grey600_24dp"/>
+
+                        <com.mmazzarolo.dev.easy_bookmarks.views.TagsCompletitionView
+                            android:id="@+id/completitionview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginRight="24dp"
+                            android:focusableInTouchMode="true"
+                            android:hint="@string/edit_bookmark_tags"
+                            android:imeOptions="actionDone"
+                            android:inputType="text|textNoSuggestions|textMultiLine"
+                            android:padding="@dimen/default_padding_medium"
+                            android:textColor="@android:color/darker_gray"
+                            android:textSize="@dimen/text_medium"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!--Separator-->
+                <include
+                    android:id="@+id/separator2"
+                    layout="@layout/separator"/>
+
+                <!--Footer section-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/default_padding_large"
+                    android:layout_marginRight="@dimen/default_padding_large"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textview_delete"
+                        style="@style/CardViewAction"
+                        android:text="@string/cardview_delete"
+                        android:textColor="@color/md_black_1000"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textview_cancel"
+                            style="@style/CardViewAction"
+                            android:text="@string/cardview_cancel"
+                            android:textColor="@color/md_black_1000"/>
+
+                        <TextView
+                            android:id="@+id/textview_done"
+                            style="@style/CardViewAction"
+                            android:text="@string/cardview_done"
+                            android:textColor="@color/accent"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.design.widget.CoordinatorLayout>

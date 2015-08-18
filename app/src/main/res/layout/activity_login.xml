@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:drawableBottom="@drawable/appicon"-->
+            <!--android:drawablePadding="@dimen/default_padding_large"-->
+            <!--android:gravity="center"-->
+            <!--android:shadowColor="@color/md_black_1000"-->
+            <!--android:shadowDx="-1"-->
+            <!--android:shadowDy="-1"-->
+            <!--android:shadowRadius="1"-->
+            <!--android:text="Easy Bookmarks"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="54sp"/>-->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/appicon"
+            android:padding="@dimen/default_padding_large"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="40dp"
+            android:text="@string/login_with_google"/>
+
+        <TextView
+            android:id="@+id/textview_connecting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Connecting with Google..."
+            android:textStyle="italic"
+            android:textSize="12sp"
+            android:textColor="@color/md_grey_200"
+            />
+        <ProgressBar
+            android:id="@+id/progressbar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="-6dp"
+            android:layout_marginTop="-4dp"
+            android:indeterminate="true"
+            android:indeterminateOnly="true"/>
+
+    </LinearLayout>
+
+</LinearLayout>

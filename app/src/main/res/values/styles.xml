@@ -1,0 +1,122 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <!--Base application theme -->
+    <style name="AppTheme.Base" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/background_material_light</item>
+    </style>
+
+    <!-- Main activity toolbar style -->
+    <style name="Toolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="popupTheme">@style/Theme.AppCompat.Light</item>
+    </style>
+
+    <style name="ToolbarTitle" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Floating action menu background -->
+    <style name="menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- TextInputLayout settings -->
+    <style name="TextAppearence.App.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textColorHint">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <!-- Transparent Activity (for EditBookmarkActivity) -->
+    <style name="Theme.Transparent" parent="AppTheme.Base">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@color/semi_translucent_white</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <!-- Cardview -->
+    <style name="MyCardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/default_padding_medium</item>
+        <item name="android:layout_marginRight">@dimen/default_padding_medium</item>
+        <item name="android:layout_marginTop">@dimen/default_padding_small</item>
+        <item name="android:layout_marginBottom">@dimen/default_padding_small</item>
+        <item name="android:animateLayoutChanges">true</item>
+        <item name="android:foreground">?selectableItemBackground</item>
+        <item name="android:elevation">5dp</item>
+    </style>
+
+    <!-- Cardview actions -->
+    <style name="CardViewAction">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/default_padding_medium</item>
+        <item name="android:paddingRight">@dimen/default_padding_medium</item>
+        <item name="android:paddingTop">@dimen/default_padding_large</item>
+        <item name="android:paddingBottom">@dimen/default_padding_large</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/md_black_1000</item>
+    </style>
+
+    <!-- Cardview action image -->
+    <style name="CardViewActionImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">@dimen/default_padding_medium</item>
+        <item name="android:paddingLeft">@dimen/default_padding_medium</item>
+        <item name="android:paddingBottom">@dimen/default_padding_large</item>
+        <item name="android:paddingTop">@dimen/default_padding_large</item>
+    </style>
+
+    <!-- Cardview title -->
+    <style name="CardViewTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">@dimen/default_padding_medium</item>
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <!-- Floating action menu background -->
+    <style name="fab_menu_labels_style">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">@color/md_grey_600</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginRight">24dp</item>
+    </style>
+
+    <!-- Cardview section -->
+    <style name="CardViewSection">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/default_padding_large</item>
+        <item name="android:layout_marginRight">@dimen/default_padding_large</item>
+    </style>
+
+    <!-- Cardview separator -->
+    <style name="CardViewSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/md_grey_300</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+</resources>

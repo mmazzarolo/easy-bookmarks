@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <array name="landing_bg">
+        <item>@color/md_red_300</item>
+        <item>@color/md_light_green_300</item>
+        <item>@color/md_purple_300</item>
+        <item>@color/md_orange_300</item>
+        <item>@color/md_cyan_300</item>
+        <item>@color/primary</item>
+    </array>
+
+</resources>

@@ -1,0 +1,40 @@
+<android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinatorlayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/toolbar_with_tabs"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_fake_fab"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="68dp"
+        android:layout_height="68dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="16dp"
+        android:padding="@dimen/default_padding_medium"
+        android:visibility="invisible">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativelayout_fake"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="-10dp"
+        android:visibility="gone">
+    </RelativeLayout>
+
+    <include layout="@layout/floating_action_menu"/>
+
+
+
+</android.support.design.widget.CoordinatorLayout>

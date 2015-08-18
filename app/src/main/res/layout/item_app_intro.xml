@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/intro_linearlayout_padding"
+        android:paddingRight="@dimen/intro_linearlayout_padding">
+
+        <ImageView
+            android:id="@+id/imageview_landing_slide"
+            android:layout_width="@dimen/intro_img"
+            android:layout_height="@dimen/intro_img"
+            android:contentDescription="@string/cd_intro_img"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/intro_margin_title"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_large"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/textview_hint"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/intro_margin_subtitle"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_medium_large"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

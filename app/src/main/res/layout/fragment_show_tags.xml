@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <com.mmazzarolo.dev.easy_bookmarks.views.CollectionPicker
+            android:id="@+id/collection_picker"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cp_itemBackgroundNormal="@color/primary"
+            app:cp_itemBackgroundPressed="@color/accent"
+            app:cp_itemMargin="5dp"
+            app:cp_textPaddingBottom="5dp"
+            app:cp_textPaddingLeft="8dp"
+            app:cp_textPaddingRight="8dp"
+            app:cp_textPaddingTop="5dp"
+            app:cp_simplified="true"/>
+
+    </ScrollView>
+
+</LinearLayout>

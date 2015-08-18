@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.github.clans.fab.FloatingActionMenu
+    android:id="@+id/floating_action_menu"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom|end"
+    android:padding="@dimen/default_padding_large"
+    app:layout_behavior="com.mmazzarolo.dev.easy_bookmarks.FloatingActionMenuBehavior"
+    fab:menu_backgroundColor="@color/semi_translucent_white"
+    fab:menu_colorNormal="@color/accent"
+    fab:menu_colorPressed="@color/accent_dark"
+    fab:menu_icon="@drawable/ic_add_white_24dp"
+    fab:menu_labels_margin="@dimen/default_padding_medium"
+    fab:menu_labels_style="@style/fab_menu_labels_style"
+    fab:menu_labels_textSize="@dimen/text_small"
+    fab:menu_shadowColor="#37000000">
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/floating_action_button_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_add_white_24dp"
+        app:fab_colorNormal="@color/accent"
+        app:fab_colorPressed="@color/accent_dark"
+        fab:fab_label="@string/fab_add_new_bookmark"
+        fab:fab_size="mini"/>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/floating_action_button_tags"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_tag_multiple_white_24dp"
+        app:fab_colorNormal="@color/accent"
+        app:fab_colorPressed="@color/accent_dark"
+        fab:fab_label="@string/fab_private_tags"
+        fab:fab_size="mini"/>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/floating_action_button_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_reorder_white_24dp"
+        app:fab_colorNormal="@color/accent"
+        app:fab_colorPressed="@color/accent_dark"
+        fab:fab_label="@string/fab_order_last"
+        fab:fab_size="mini"/>
+
+</com.github.clans.fab.FloatingActionMenu>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:width="192dp"
+        android:height="192dp"
+        android:viewportHeight="24"
+        android:viewportWidth="24"
+        app:vc_viewportHeight="24"
+        app:vc_viewportWidth="24">
+
+    <path
+        android:fillColor="@color/white"
+        android:pathData="@string/vector_bookmark_pathdata"
+        app:vc_fillColor="@color/white"
+        app:vc_pathData="@string/vector_bookmark_pathdata"
+        />
+
+</vector>

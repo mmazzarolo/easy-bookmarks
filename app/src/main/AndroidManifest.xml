@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.mmazzarolo.dev.easy_bookmarks"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <uses-permission android:name="android.permission.USE_CREDENTIALS"/>
+
+    <application
+        android:name="EasyBookmarksApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.EditBookmarkActivity"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.Transparent"/>
+
+        <activity
+            android:name=".activities.LoginActivity"
+            android:label="@string/login_activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <activity
+            android:name=".activities.AppIntroActivity"
+            android:label="@string/intro_activity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <activity
+            android:name=".activities.SettingsActivity"
+            android:label="Settings"/>
+
+        <activity
+            android:name=".activities.NewBookmarkActivity"
+            android:theme="@style/Theme.Transparent">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="text/plain"/>
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.PrivateTagDetailActivity"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.PublicTagDetailActivity"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.AboutActivity"/>
+
+        <receiver android:name=".widget.MyWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/app_widget_info"/>
+        </receiver>
+
+        <service
+            android:name=".widget.MyWidgetService"
+            android:exported="false"
+            android:permission="android.permission.BIND_REMOTEVIEWS"/>
+
+    </application>
+
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version"/>
+
+</manifest>
