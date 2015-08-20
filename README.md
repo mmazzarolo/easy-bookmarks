@@ -30,7 +30,7 @@ Also, thanks to Google for support:appcompat, support:design, shared elements tr
 
 ##### About the FAB
 
-I tried to imitate Inbox's Floating Action Button in Easy Bookmarks, this is the result:
+I tried to imitate Inbox's Floating Action Button in Easy Bookmarks, this is the result:  
 ![FAB](https://raw.githubusercontent.com/mmazzarolo/easy-bookmarks/master/extras/2.gif "Optional Title")
 
 You can take a look at [this Gist](https://gist.github.com/mmazzarolo/a5d780807fdfa93ee7ed) to see how to make Clans.Fab work inside a Coordinator Layout.
