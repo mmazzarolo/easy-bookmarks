@@ -1,4 +1,5 @@
-# Easy Bookmarks ![Logo](/app/src/main/res/mipmap-hdpi/ic_launcher.png "Optional Title") 
+# Easy Bookmarks 
+![Logo](/app/src/main/res/mipmap-hdpi/ic_launcher.png "Optional Title") 
 
 
 Easy bookmarks is an Android app I developed for the last project of the [Android Developer Nanodegree course](https://www.udacity.com/course/android-developer-nanodegree--nd801).
