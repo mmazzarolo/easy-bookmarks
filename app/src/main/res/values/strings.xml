@@ -136,7 +136,7 @@
     <string name="showcase_actions">Click here to add a new bookmark and for other actions.</string>
     <string name="showcase_public">And lastly:\nclicking here brings you to a list of all the bookmarks stored in Easy Bookmarks.\nHave fun!</string>
     <string name="showcase_got_it">GOT IT</string>
-    <string name="showcase_custom_title">Now you can now add a custom title to your new bookmark...</string>
+    <string name="showcase_custom_title">Now you can add a custom title to your new bookmark...</string>
     <string name="showcase_tags">...and up to three tags.</string>
 
 </resources>
