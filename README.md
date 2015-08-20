@@ -1,5 +1,5 @@
 # Easy Bookmarks 
-![Logo](/app/src/main/res/mipmap-hdpi/ic_launcher.png "Optional Title") 
+![Logo](https://raw.githubusercontent.com/mmazzarolo/easy-bookmarks/master/app/src/main/res/mipmap-mdpi/ic_launcher.png "Optional Title") 
 
 
 Easy bookmarks is an Android app I developed for the last project of the [Android Developer Nanodegree course](https://www.udacity.com/course/android-developer-nanodegree--nd801).
@@ -26,12 +26,12 @@ I also implemented a lot of cool stuff from libraries found on GitHub:
 - [MaterialShowcaseView](https://github.com/deano2390/MaterialShowcaseView)
 
 Also, thanks to Google for support:appcompat, support:design, shared elements transactions... and everything else  
-[![Animations](/extras/2.gif?raw=true "Optional Title")
+[![Animations](https://raw.githubusercontent.com/mmazzarolo/easy-bookmarks/master/extras/1.gif "Optional Title")
 
 ##### About the FAB
 
 I tried to imitate Inbox's Floating Action Button in Easy Bookmarks, this is the result:
-![FAB](/extras/1.gif?raw=true "Optional Title")
+![FAB](https://raw.githubusercontent.com/mmazzarolo/easy-bookmarks/master/extras/2.gif "Optional Title")
 
 You can take a look at [this Gist](https://gist.github.com/mmazzarolo/a5d780807fdfa93ee7ed) to see how to make Clans.Fab work inside a Coordinator Layout.
 
