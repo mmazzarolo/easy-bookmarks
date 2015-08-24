@@ -55,7 +55,9 @@ public class MyViewsFactory implements RemoteViewsService.RemoteViewsFactory {
     }
 
     private void getList() {
-        mFirebase.child(FirebaseFragment.PATH_PRIVATE_BOOKMARKS).child(mUserid).addListenerForSingleValueEvent(new ValueEventListener() {
+        mFirebase.child(FirebaseFragment.PATH_PRIVATE_BOOKMARKS).child(mUserid)
+                .orderByChild(FirebaseFragment.PATH_DATE_SAVED)
+                .addListenerForSingleValueEvent(new ValueEventListener() {
             @Override public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot child : dataSnapshot.getChildren()) {
                     mBookmarks.add(new PrivateBookmark(child));

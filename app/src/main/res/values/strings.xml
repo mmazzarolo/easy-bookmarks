@@ -40,8 +40,8 @@
     <string name="intro_sync">SYNC</string>
     <string name="intro_public">GET INSPIRED</string>
     <string name="intro_save_hint">Save all the awesome links you find while surfing the web.</string>
-    <string name="intro_organize_hint">Keep the bookmarks always at your fingertips: tags are the most flexible way to organize them .</string>
-    <string name="intro_sync_hint">All your bookmarks are automatically synched with your Google account: You won\'t ever lose any important link.</string>
+    <string name="intro_organize_hint">Keep the bookmarks always at your fingertips: tags are the most flexible way to organize them.</string>
+    <string name="intro_sync_hint">All your bookmarks are automatically synced with your Google account: You won\'t ever lose any important link.</string>
     <string name="intro_public_hint">Keep an eye on the most saved and tagged bookmarks on the web and... get inspired.</string>
 
     <!--Snackbar messages-->
