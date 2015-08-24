@@ -60,7 +60,7 @@ public class MyViewsFactory implements RemoteViewsService.RemoteViewsFactory {
                 .addListenerForSingleValueEvent(new ValueEventListener() {
             @Override public void onDataChange(DataSnapshot dataSnapshot) {
                 for (DataSnapshot child : dataSnapshot.getChildren()) {
-                    mBookmarks.add(new PrivateBookmark(child));
+                    mBookmarks.add(0, new PrivateBookmark(child));
                 }
                 AppWidgetManager appWidgetManager = AppWidgetManager.getInstance(context);
                 int appWidgetIds[] = appWidgetManager
